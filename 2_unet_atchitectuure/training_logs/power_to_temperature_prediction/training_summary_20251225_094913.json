@@ -1,0 +1,73 @@
+{
+  "timestamp": "20251225_094913",
+  "task_type": "power_to_temperature",
+  "config": {
+    "task_type": "power_to_temperature",
+    "power_dir": "/home/txr/power_a_input/",
+    "temp_dir": "/home/txr/power_a_output/",
+    "stress_dir": "/home/txr/power_a_output/",
+    "flp_file_path": "/home/txr/code/second_version/final_version/1_data/data_generate/input_power_data_generate/power_data_flp/ev6_3D_core_layer.flp",
+    "gpu_ids": "0,1,2,3",
+    "device_ids": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "grid_res": [
+      256,
+      256
+    ],
+    "use_cache": true,
+    "num_workers": 4,
+    "cache_dir": "/home/txr/code/second_version/final_version/2_unet_architecture/cache/power_to_temperature",
+    "precision": "float64",
+    "padding_x": 3.6,
+    "padding_y": 3.43,
+    "in_channels": 1,
+    "out_channels": 1,
+    "base_ch": 32,
+    "use_attention": true,
+    "epochs": 300,
+    "batch_size": 256,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "use_amp": true,
+    "use_scheduler": true,
+    "plateau_patience": 10,
+    "plateau_factor": 0.5,
+    "plateau_min_lr": 1e-05,
+    "early_stopping": true,
+    "early_stopping_patience": 20,
+    "save_dir": "/home/txr/code/second_version/final_version/2_unet_architecture/training_logs/power_to_temperature_prediction",
+    "print_freq": 1,
+    "save_freq": 50,
+    "monitor_errors": true,
+    "temp_error_thresholds": [
+      1.0,
+      5.0,
+      10.0,
+      20.0,
+      30.0
+    ],
+    "stress_error_thresholds": [
+      10000000.0,
+      50000000.0,
+      100000000.0,
+      200000000.0,
+      250000000.0,
+      300000000.0
+    ]
+  },
+  "best_stats": {
+    "val_loss": 0.002538178188726306,
+    "val_loss_epoch": 111,
+    "max_error": 15.935067176818848,
+    "max_error_epoch": 129,
+    "mean_error": 0.39766862988471985,
+    "mean_error_epoch": 111
+  },
+  "total_epochs": 131,
+  "total_time_seconds": 842.8975820541382,
+  "total_time_hours": 0.2341382172372606
+}

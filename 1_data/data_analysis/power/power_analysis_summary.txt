@@ -1,0 +1,50 @@
+POWER Data Analysis Summary
+================================================================================
+ID Range: 1 - 3000
+Step: 500
+Bins: 250
+Files Analyzed: 6
+================================================================================
+
+File: power_a_1.txt
+  Total Points: 40,000
+  Value Range: [0.000e+00, 1.781e+10]
+  Mean: 3.049e+09
+  Median: 7.263e+09
+  Zero Ratio: 63.4%
+
+File: power_a_501.txt
+  Total Points: 40,000
+  Value Range: [0.000e+00, 1.852e+10]
+  Mean: 3.060e+09
+  Median: 7.105e+09
+  Zero Ratio: 63.4%
+
+File: power_a_1001.txt
+  Total Points: 40,000
+  Value Range: [0.000e+00, 1.893e+10]
+  Mean: 3.045e+09
+  Median: 6.789e+09
+  Zero Ratio: 63.4%
+
+File: power_a_1501.txt
+  Total Points: 40,000
+  Value Range: [0.000e+00, 1.770e+10]
+  Mean: 3.013e+09
+  Median: 7.210e+09
+  Zero Ratio: 63.4%
+
+File: power_a_2001.txt
+  Total Points: 40,000
+  Value Range: [0.000e+00, 1.818e+10]
+  Mean: 2.968e+09
+  Median: 6.847e+09
+  Zero Ratio: 63.4%
+
+File: power_a_2501.txt
+  Total Points: 40,000
+  Value Range: [0.000e+00, 1.791e+10]
+  Mean: 2.995e+09
+  Median: 7.363e+09
+  Zero Ratio: 63.4%
+

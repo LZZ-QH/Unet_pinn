@@ -1,0 +1,50 @@
+STRESS Data Analysis Summary
+================================================================================
+ID Range: 1 - 3000
+Step: 500
+Bins: 250
+Files Analyzed: 6
+================================================================================
+
+File: strength1.txt
+  Total Points: 34,331
+  Value Range: [0.000e+00, 5.126e+08]
+  Mean: 1.203e+08
+  Median: 1.099e+08
+  Std: 9.195e+07
+
+File: strength501.txt
+  Total Points: 34,329
+  Value Range: [0.000e+00, 5.106e+08]
+  Mean: 1.210e+08
+  Median: 1.103e+08
+  Std: 9.256e+07
+
+File: strength1001.txt
+  Total Points: 34,339
+  Value Range: [0.000e+00, 5.076e+08]
+  Mean: 1.202e+08
+  Median: 1.095e+08
+  Std: 9.229e+07
+
+File: strength1501.txt
+  Total Points: 34,282
+  Value Range: [0.000e+00, 5.084e+08]
+  Mean: 1.189e+08
+  Median: 1.086e+08
+  Std: 9.107e+07
+
+File: strength2001.txt
+  Total Points: 34,349
+  Value Range: [0.000e+00, 4.968e+08]
+  Mean: 1.172e+08
+  Median: 1.068e+08
+  Std: 8.983e+07
+
+File: strength2501.txt
+  Total Points: 34,214
+  Value Range: [0.000e+00, 5.129e+08]
+  Mean: 1.180e+08
+  Median: 1.078e+08
+  Std: 9.028e+07
+

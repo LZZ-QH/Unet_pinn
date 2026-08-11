@@ -1,0 +1,5 @@
+method,pixels,runtime_s,time_per_pixel_us,valid_count,log10_Nf_MAE,Nf_mean_relative_error_%,Nf_median_relative_error_%,Nf_p95_relative_error_%,note,implementation
+vectorized bisection reference,2000000,8.37261513993144,4.18630756996572,2000000,0.0,0.0,0.0,0.0,reference,CPU / NumPy vectorized
+Brent strict,2000000,19.667202623095363,9.833601311547682,2000000,1.3272775545303261e-14,3.056191109061374e-12,2.7375680558264014e-13,1.491726384932569e-11,,"CPU / SciPy brentq, 32 processes"
+log-domain trust-region strict,2000000,56.36773965274915,28.183869826374575,2000000,4.305735708464071e-05,0.009906024729744936,0.0005001796594339587,0.05024194122909374,,"CPU / SciPy least_squares, 32 processes"
+scalar bisection strict,2000000,52.05567042995244,26.02783521497622,2000000,0.0,0.0,0.0,0.0,,"CPU / scalar bisection, 32 processes"

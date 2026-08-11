@@ -1,0 +1,42 @@
+{
+  "label_dir": "paper_2026/data/main2500/labels",
+  "save_dir": "paper_2026/artifacts/unet_runs",
+  "input_mode": "power_mask_xy_total",
+  "channels": [
+    "epsilon_eq_total_a",
+    "sigma_mean_MPa"
+  ],
+  "holdout_layout": null,
+  "val_fraction": 0.1,
+  "test_fraction": 0.1,
+  "epochs": 120,
+  "batch_size": 8,
+  "num_workers": 4,
+  "lr": 0.001,
+  "weight_decay": 0.0004,
+  "base_ch": 32,
+  "loss": "huber",
+  "huber_beta": 0.5,
+  "no_attention": true,
+  "no_dropout": false,
+  "seed": 42,
+  "device": "cuda",
+  "gpu_ids": [
+    0
+  ],
+  "smoke": false,
+  "run_dir": "paper_2026/artifacts/unet_7ch_noema",
+  "sample_count": 2500,
+  "train_count": 2000,
+  "val_count": 250,
+  "test_count": 250,
+  "input_channels": 7,
+  "parameter_count": 7764226,
+  "layouts": [
+    "L0",
+    "L4",
+    "L5",
+    "L6",
+    "L7"
+  ]
+}

@@ -4,8 +4,9 @@ Code and reproducibility materials for **“Fatigue Life Prediction of High-Powe
 Chips using a Physics-Informed Deep Learning Methodology.”**
 
 The current paper implementation is in [`paper_2026/`](paper_2026/README.md).
-It supersedes the early endpoint-temperature/endpoint-stress prototype kept in
-the repository root for provenance.
+It replaces the early endpoint-temperature/endpoint-stress prototype. The old
+prototype remains recoverable from Git history but is no longer present in the
+current repository tree.
 
 The updated workflow is:
 
@@ -21,6 +22,3 @@ layout-aware power input
 
 Start with the [paper-code README](paper_2026/README.md) for the environment,
 data schema, commands, result provenance, and scope limitations.
-
-> Note: the legacy directories describe the earlier power-to-temperature and
-> power-to-von-Mises-stress study. They do not reproduce the revised manuscript.

@@ -1,0 +1,109 @@
+{
+  "date": "2026-07-06",
+  "host": "ada",
+  "platform": "Linux-4.18.0-553.81.1.el8_10.x86_64-x86_64-with-glibc2.28",
+  "cpu": "x86_64",
+  "torch": "2.6.0+cu124",
+  "cuda_available": true,
+  "gpu0": "NVIDIA GeForce RTX 4090",
+  "config": {
+    "epsilon_f_prime": 0.325,
+    "sigma_f_prime_mpa": 263.535316568,
+    "b": -0.1443,
+    "c": -0.57,
+    "youngs_modulus_mpa": 31200.0,
+    "epsilon_a_range": [
+      0.0001,
+      0.004
+    ],
+    "sigma_mean_range": [
+      0.0,
+      140.0
+    ],
+    "train_samples": 40000,
+    "epochs": 2500,
+    "batch_size": 1024,
+    "lr": 0.001,
+    "seed": 42
+  },
+  "pooled_test_samples": 250,
+  "pooled_total_valid_pixels": 3153935,
+  "pooled_benchmark_pixels": 2000000,
+  "single_sample_id": 10001,
+  "single_sample_pixels": 12540,
+  "rows": [
+    {
+      "scope": "pooled_test_pixels",
+      "method": "vectorized bisection reference",
+      "hardware": "ada CPU / NumPy",
+      "pixels": 2000000,
+      "runtime_s": 8.331949498038739,
+      "time_per_pixel_us": 4.1659747490193695,
+      "log10_Nf_MAE": 0.0,
+      "Nf_mean_relative_error_%": 0.0
+    },
+    {
+      "scope": "pooled_test_pixels",
+      "method": "pure-physics P-PINN",
+      "hardware": "ada CPU / PyTorch",
+      "pixels": 2000000,
+      "runtime_s": 0.17786142695695162,
+      "time_per_pixel_us": 0.08893071347847581,
+      "valid_count": 2000000,
+      "log10_Nf_MAE": 0.0005320223300700202,
+      "Nf_mean_relative_error_%": 0.12255737160769337,
+      "Nf_median_relative_error_%": 0.09475551520897946,
+      "Nf_p95_relative_error_%": 0.3236115556301392
+    },
+    {
+      "scope": "pooled_test_pixels",
+      "method": "pure-physics P-PINN",
+      "hardware": "ada GPU / NVIDIA GeForce RTX 4090",
+      "pixels": 2000000,
+      "runtime_s": 0.08374174451455474,
+      "time_per_pixel_us": 0.04187087225727737,
+      "valid_count": 2000000,
+      "log10_Nf_MAE": 0.0005320204134076289,
+      "Nf_mean_relative_error_%": 0.12255691706294704,
+      "Nf_median_relative_error_%": 0.09475079463512703,
+      "Nf_p95_relative_error_%": 0.32360599249132543
+    },
+    {
+      "scope": "complete_single_sample_10001",
+      "method": "vectorized bisection reference",
+      "hardware": "ada CPU / NumPy",
+      "pixels": 12540,
+      "runtime_s": 0.038808440789580345,
+      "time_per_pixel_us": 3.0947719927895014,
+      "log10_Nf_MAE": 0.0,
+      "Nf_mean_relative_error_%": 0.0
+    },
+    {
+      "scope": "complete_single_sample_10001",
+      "method": "pure-physics P-PINN",
+      "hardware": "ada CPU / PyTorch",
+      "pixels": 12540,
+      "runtime_s": 0.0018572360277175903,
+      "time_per_pixel_us": 0.14810494638896254,
+      "valid_count": 12540,
+      "log10_Nf_MAE": 0.00029603901473625074,
+      "Nf_mean_relative_error_%": 0.06819784761193441,
+      "Nf_median_relative_error_%": 0.05906225303599334,
+      "Nf_p95_relative_error_%": 0.14923132389471103
+    },
+    {
+      "scope": "complete_single_sample_10001",
+      "method": "log-domain trust-region strict",
+      "hardware": "ada CPU / SciPy least_squares",
+      "pixels": 12540,
+      "runtime_s": 8.844472295138985,
+      "time_per_pixel_us": 705.3008209839701,
+      "valid_count": 12540,
+      "log10_Nf_MAE": 5.0096809426262066e-06,
+      "Nf_mean_relative_error_%": 0.0011534832730221134,
+      "Nf_median_relative_error_%": 6.650051334076946e-05,
+      "Nf_p95_relative_error_%": 0.0069760435876348266
+    }
+  ],
+  "note": "Trust-region strict was run on one complete sample field to avoid arbitrary 20k subset and to keep runtime practical; pooled 2M trust-region would take roughly single-sample time scaled by pixel count."
+}

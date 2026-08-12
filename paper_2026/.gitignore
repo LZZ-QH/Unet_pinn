@@ -1,0 +1,6 @@
+artifacts/
+data/main2500/
+__pycache__/
+*.py[cod]
+*.pth
+*.pt

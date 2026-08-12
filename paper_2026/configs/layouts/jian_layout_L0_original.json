@@ -1,0 +1,30 @@
+{
+  "layout_id": "L0_original_jian",
+  "description": "Original Jian/Zhou author geometry layout used by the current dense batch.",
+  "units": "mm",
+  "base_chip_power_W": 82.8855992686,
+  "transient": {
+    "ncycles": 5,
+    "ton_s": 20,
+    "toff_s": 20,
+    "tstep_s": 2
+  },
+  "cooling_h_W_m2K": 6800,
+  "solder_material": {
+    "E_GPa": 31.2,
+    "z_layers_mm": [0.88, 0.93, 0.98]
+  },
+  "dense_sampling": {
+    "nxy_per_solder_island": 64,
+    "z_aggregation": "through_thickness_max",
+    "output_grid": [256, 256]
+  },
+  "islands": [
+    {"idx": 1, "active_domain": 10, "solder_domain": 6, "active_box": [-21.5, -15.5, 6.25, 12.25], "solder_box": [-22.25, -14.75, 5.5, 13.0]},
+    {"idx": 2, "active_domain": 16, "solder_domain": 14, "active_box": [-2.8, 3.2, -8.85, -2.85], "solder_box": [-3.55, 3.95, -9.6, -2.1]},
+    {"idx": 3, "active_domain": 19, "solder_domain": 17, "active_box": [-1.2, 4.8, 2.65, 8.65], "solder_box": [-1.95, 5.55, 1.9, 9.4]},
+    {"idx": 4, "active_domain": 24, "solder_domain": 22, "active_box": [6.4, 12.4, -8.85, -2.85], "solder_box": [5.65, 13.15, -9.6, -2.1]},
+    {"idx": 5, "active_domain": 32, "solder_domain": 30, "active_box": [14.8, 20.8, 2.65, 8.65], "solder_box": [14.05, 21.55, 1.9, 9.4]},
+    {"idx": 6, "active_domain": 37, "solder_domain": 33, "active_box": [15.6, 21.6, -8.85, -2.85], "solder_box": [14.85, 22.35, -9.6, -2.1]}
+  ]
+}

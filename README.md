@@ -1,2 +1,24 @@
 # Unet_pinn
-paper_code
+
+Code and reproducibility materials for **“Fatigue Life Prediction of High-Power
+Chips using a Physics-Informed Deep Learning Methodology.”**
+
+The current paper implementation is in [`paper_2026/`](paper_2026/README.md).
+It replaces the early endpoint-temperature/endpoint-stress prototype. The old
+prototype remains recoverable from Git history but is no longer present in the
+current repository tree.
+
+The updated workflow is:
+
+```text
+layout-aware power input
+  -> transient COMSOL fatigue-variable labels
+  -> 1/7-channel U-Net
+  -> epsilon_eq_total_a(x,y), sigma_mean_MPa(x,y)
+  -> CMB/Morrow numerical solver or pure-physics P-PINN
+  -> Nf(x,y)
+  -> lowest-0.1%-field device-life estimate
+```
+
+Start with the [paper-code README](paper_2026/README.md) for the environment,
+data schema, commands, result provenance, and scope limitations.

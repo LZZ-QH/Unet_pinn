@@ -1,0 +1,495 @@
+{
+  "layout_id": "L4_staggered_asymmetric",
+  "description": "Staggered asymmetric six-chip layout for stronger geometry OOD.",
+  "units": "mm",
+  "base_chip_power_W": 82.8855992686,
+  "layout_family": "geometry_ood",
+  "chip_active_size_mm": [
+    6.0,
+    6.0
+  ],
+  "solder_island_size_mm": [
+    7.5,
+    7.5
+  ],
+  "centers_xy_mm": [
+    [
+      -18.0,
+      9.0
+    ],
+    [
+      -7.0,
+      -8.0
+    ],
+    [
+      0.0,
+      3.0
+    ],
+    [
+      9.0,
+      -2.0
+    ],
+    [
+      15.0,
+      8.0
+    ],
+    [
+      19.0,
+      -9.0
+    ]
+  ],
+  "transient": {
+    "ncycles": 5,
+    "ton_s": 20,
+    "toff_s": 20,
+    "tstep_s": 2
+  },
+  "cooling_h_W_m2K": 6800,
+  "solder_material": {
+    "E_GPa": 31.2,
+    "z_layers_mm": [
+      0.88,
+      0.93,
+      0.98
+    ]
+  },
+  "dense_sampling": {
+    "nxy_per_solder_island": 64,
+    "z_aggregation": "through_thickness_max",
+    "output_grid": [
+      256,
+      256
+    ]
+  },
+  "status": "domain_mapped_dense_sampling_ready",
+  "islands": [
+    {
+      "name": "island01_seg01_domain8",
+      "physical_island": 1,
+      "solder_domain": 8,
+      "solder_box": [
+        -21.75,
+        -14.25,
+        5.25,
+        12.75
+      ],
+      "source_domain_box": [
+        -21.75,
+        -14.25,
+        5.25,
+        12.75
+      ],
+      "intersection_area_mm2": 56.25
+    },
+    {
+      "name": "island02_seg01_domain11",
+      "physical_island": 2,
+      "solder_domain": 11,
+      "solder_box": [
+        -10.75,
+        -3.25,
+        -11.75,
+        -4.25
+      ],
+      "source_domain_box": [
+        -10.75,
+        -3.25,
+        -11.75,
+        -4.25
+      ],
+      "intersection_area_mm2": 56.25
+    },
+    {
+      "name": "island03_seg01_domain17",
+      "physical_island": 3,
+      "solder_domain": 17,
+      "solder_box": [
+        -3.75,
+        3.75,
+        -0.75,
+        6.75
+      ],
+      "source_domain_box": [
+        -3.75,
+        3.75,
+        -0.75,
+        6.75
+      ],
+      "intersection_area_mm2": 56.25
+    },
+    {
+      "name": "island03_seg02_domain15",
+      "physical_island": 3,
+      "solder_domain": 15,
+      "solder_box": [
+        -3.75,
+        -3.0,
+        2.65,
+        6.75
+      ],
+      "source_domain_box": [
+        -7.0,
+        -3.0,
+        2.65,
+        9.65
+      ],
+      "intersection_area_mm2": 3.075
+    },
+    {
+      "name": "island03_seg03_domain19",
+      "physical_island": 3,
+      "solder_domain": 19,
+      "solder_box": [
+        -3.75,
+        -3.0,
+        2.65,
+        6.75
+      ],
+      "source_domain_box": [
+        -3.75,
+        -3.0,
+        2.65,
+        6.75
+      ],
+      "intersection_area_mm2": 3.075
+    },
+    {
+      "name": "island04_seg01_domain24",
+      "physical_island": 4,
+      "solder_domain": 24,
+      "solder_box": [
+        5.25,
+        12.75,
+        -5.75,
+        1.75
+      ],
+      "source_domain_box": [
+        5.25,
+        12.75,
+        -5.75,
+        1.75
+      ],
+      "intersection_area_mm2": 56.25
+    },
+    {
+      "name": "island05_seg01_domain35",
+      "physical_island": 5,
+      "solder_domain": 35,
+      "solder_box": [
+        11.25,
+        18.75,
+        4.25,
+        11.75
+      ],
+      "source_domain_box": [
+        11.25,
+        18.75,
+        4.25,
+        11.75
+      ],
+      "intersection_area_mm2": 56.25
+    },
+    {
+      "name": "island05_seg02_domain30",
+      "physical_island": 5,
+      "solder_domain": 30,
+      "solder_box": [
+        11.25,
+        13.0,
+        4.25,
+        9.65
+      ],
+      "source_domain_box": [
+        9.0,
+        13.0,
+        2.65,
+        9.65
+      ],
+      "intersection_area_mm2": 9.45
+    },
+    {
+      "name": "island05_seg03_domain32",
+      "physical_island": 5,
+      "solder_domain": 32,
+      "solder_box": [
+        11.25,
+        13.0,
+        4.25,
+        9.65
+      ],
+      "source_domain_box": [
+        11.25,
+        13.0,
+        4.25,
+        9.65
+      ],
+      "intersection_area_mm2": 9.45
+    },
+    {
+      "name": "island06_seg01_domain38",
+      "physical_island": 6,
+      "solder_domain": 38,
+      "solder_box": [
+        15.25,
+        22.75,
+        -12.75,
+        -5.25
+      ],
+      "source_domain_box": [
+        15.25,
+        22.75,
+        -12.75,
+        -5.25
+      ],
+      "intersection_area_mm2": 56.25
+    },
+    {
+      "name": "island06_seg02_domain42",
+      "physical_island": 6,
+      "solder_domain": 42,
+      "solder_box": [
+        15.6,
+        22.6,
+        -12.75,
+        -10.85
+      ],
+      "source_domain_box": [
+        15.6,
+        22.6,
+        -12.75,
+        -10.85
+      ],
+      "intersection_area_mm2": 13.3
+    }
+  ],
+  "active_heat_sources": [
+    {
+      "physical_island": 1,
+      "active_domains": [
+        10
+      ],
+      "active_volume_mm3": 7.1999974251,
+      "target_active_box": [
+        -21.0,
+        -15.0,
+        6.0,
+        12.0
+      ],
+      "segments": [
+        {
+          "domain": 10,
+          "intersection_box": [
+            -21.0,
+            -15.0,
+            6.0,
+            12.0
+          ],
+          "source_domain_box": [
+            -21.0,
+            -15.0,
+            6.0,
+            12.0
+          ],
+          "intersection_area_mm2": 36.0,
+          "domain_volume_mm3": 7.1999974251
+        }
+      ]
+    },
+    {
+      "physical_island": 2,
+      "active_domains": [
+        13
+      ],
+      "active_volume_mm3": 7.1999974251,
+      "target_active_box": [
+        -10.0,
+        -4.0,
+        -11.0,
+        -5.0
+      ],
+      "segments": [
+        {
+          "domain": 13,
+          "intersection_box": [
+            -10.0,
+            -4.0,
+            -11.0,
+            -5.0
+          ],
+          "source_domain_box": [
+            -10.0,
+            -4.0,
+            -11.0,
+            -5.0
+          ],
+          "intersection_area_mm2": 36.0,
+          "domain_volume_mm3": 7.1999974251
+        }
+      ]
+    },
+    {
+      "physical_island": 3,
+      "active_domains": [
+        21
+      ],
+      "active_volume_mm3": 7.1999974251,
+      "target_active_box": [
+        -3.0,
+        3.0,
+        0.0,
+        6.0
+      ],
+      "segments": [
+        {
+          "domain": 21,
+          "intersection_box": [
+            -3.0,
+            3.0,
+            0.0,
+            6.0
+          ],
+          "source_domain_box": [
+            -3.0,
+            3.0,
+            0.0,
+            6.0
+          ],
+          "intersection_area_mm2": 36.0,
+          "domain_volume_mm3": 7.1999974251
+        }
+      ]
+    },
+    {
+      "physical_island": 4,
+      "active_domains": [
+        26
+      ],
+      "active_volume_mm3": 7.1999974251,
+      "target_active_box": [
+        6.0,
+        12.0,
+        -5.0,
+        1.0
+      ],
+      "segments": [
+        {
+          "domain": 26,
+          "intersection_box": [
+            6.0,
+            12.0,
+            -5.0,
+            1.0
+          ],
+          "source_domain_box": [
+            6.0,
+            12.0,
+            -5.0,
+            1.0
+          ],
+          "intersection_area_mm2": 36.0,
+          "domain_volume_mm3": 7.1999974251
+        }
+      ]
+    },
+    {
+      "physical_island": 5,
+      "active_domains": [
+        37,
+        36
+      ],
+      "active_volume_mm3": 7.1999974251,
+      "target_active_box": [
+        12.0,
+        18.0,
+        5.0,
+        11.0
+      ],
+      "segments": [
+        {
+          "domain": 37,
+          "intersection_box": [
+            12.0,
+            18.0,
+            5.0,
+            11.0
+          ],
+          "source_domain_box": [
+            12.0,
+            18.0,
+            5.0,
+            11.0
+          ],
+          "intersection_area_mm2": 36.0,
+          "domain_volume_mm3": 6.4559976413
+        },
+        {
+          "domain": 36,
+          "intersection_box": [
+            12.0,
+            13.0,
+            5.0,
+            9.65
+          ],
+          "source_domain_box": [
+            12.0,
+            13.0,
+            5.0,
+            9.65
+          ],
+          "intersection_area_mm2": 4.65,
+          "domain_volume_mm3": 0.7439997838
+        }
+      ]
+    },
+    {
+      "physical_island": 6,
+      "active_domains": [
+        45,
+        44
+      ],
+      "active_volume_mm3": 7.1999974251,
+      "target_active_box": [
+        16.0,
+        22.0,
+        -12.0,
+        -6.0
+      ],
+      "segments": [
+        {
+          "domain": 45,
+          "intersection_box": [
+            16.0,
+            22.0,
+            -12.0,
+            -6.0
+          ],
+          "source_domain_box": [
+            16.0,
+            22.0,
+            -12.0,
+            -6.0
+          ],
+          "intersection_area_mm2": 36.0,
+          "domain_volume_mm3": 6.0959980216
+        },
+        {
+          "domain": 44,
+          "intersection_box": [
+            16.0,
+            22.0,
+            -12.0,
+            -10.85
+          ],
+          "source_domain_box": [
+            16.0,
+            22.0,
+            -12.0,
+            -10.85
+          ],
+          "intersection_area_mm2": 6.9,
+          "domain_volume_mm3": 1.1039994035
+        }
+      ]
+    }
+  ]
+}
